@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 import 'app.dart';
 
 // void main() {
@@ -11,6 +12,8 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const PopularGitReposApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

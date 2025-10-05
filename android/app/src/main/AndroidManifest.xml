@@ -1,4 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- ✅ Required for API access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ✅ Optional: For saving or reading local files -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- ✅ Optional (Android 13+): Scoped media storage -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+
+
+
     <application
         android:label="rfl"
         android:name="${applicationName}"
