@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../repository/github_repository.dart';
 import '../../blocs/repo_details/repo_details_cubit.dart';
 import '../../models/github_repo.dart';
@@ -60,13 +61,9 @@ class DetailsPage extends StatelessWidget {
                   const SizedBox(height: 16),
                   Text('Last updated: ${formatAsMmDdYyyyHhSs(repo.updatedAt)}'),
                   const SizedBox(height: 24),
-                  FilledButton.icon(
-                    onPressed: () async {
-                      // Open in browser if desired using url_launcher (optional)
-                    },
-                    icon: const Icon(Icons.open_in_new),
-                    label: const Text('Open on GitHub'),
-                  ),
+
+
+
                 ],
               ),
             );

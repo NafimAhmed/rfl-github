@@ -23,6 +23,7 @@ class PopularGitReposApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
         title: 'Popular GitRepos',
         theme: ThemeData(
           useMaterial3: true,
